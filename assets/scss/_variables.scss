@@ -1,13 +1,11 @@
 @font-face {
     font-family: workSans;
-    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf');
+    src: url('../fonts/WorkSans-VariableFont_wght.ttf');
 }
 
-// FONTS
-$workSans-font: workSans;
-
 // COLORS
-$color_white: #fff;
+$color-white: rgba(255,255,255);
+$color-white_transparent: rgba(255,255,255,0.1);
 $color-dark_2e2e2e: #2e2e2e;
 $color-dark_867772: #867772;
 $color-light_ebccc2: #ebccc2;

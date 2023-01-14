@@ -1,1 +1,118 @@
 @import 'variables.scss';
+@import 'mixins.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-dark_2e2e2e;
+    min-width: 400px;
+    font-family: workSans;
+
+    /* ################################# 
+        ASIDE NAVIGATION STYLES
+    ################################# */
+
+    .navigationAside {
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40px;
+        float: left;
+        list-style: none;
+
+        .navigationAside__row-wrap {
+            display: flex;
+            align-items: center;
+
+            svg {
+                color: $color-light_115-115-115;
+                rotate: 33.7deg;
+            }
+
+            a {
+                margin-left: 20px;
+                color: $color-light_115-115-115;
+                text-decoration: none;
+                
+            }
+        }
+
+        .navigationAside_placeholer {
+            @include mixin_navbar_inactive_circles;
+            height: 48px;
+            width: 2px;
+            border-radius: 20px;
+            margin-left: 18px;
+            margin-block: 10px;
+        }
+    }
+
+    /* ################################# 
+        TOP NAVIGATION STYLES
+    ################################# */
+
+    .navigationTop {
+        position: fixed;
+        width: 100vw;
+
+        .flex-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10vh;
+            padding-inline: 0px 140px;
+        }
+
+        img {
+            height: 48px;
+        }
+
+        .navigationTop_anchor-wrap {
+            display: flex;
+            align-items: center;
+
+            .navigationTop_anchor-wrap_socialMedia {
+                margin-left: 90px;
+
+                a {
+                    margin-left: 15px;
+                }
+            }
+
+            .navigationTop_anchor-wrap_language {
+                margin-left: 90px;
+            }
+        }
+    }
+
+    main {
+
+        .article_heading {
+            padding-top: 13%;
+            padding-left: 30%;
+            margin-bottom: 10%;
+
+            h1 {
+                z-index: -1;
+                position: fixed;
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: $color-white;
+                -webkit-animation: vibrate-1 0.3s linear infinite both;
+                animation: vibrate-1 0.3s linear infinite both;
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        padding-inline: 103px;
+    }
+}

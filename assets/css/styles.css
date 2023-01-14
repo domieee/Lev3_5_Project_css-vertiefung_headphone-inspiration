@@ -1,6 +1,104 @@
 @font-face {
   font-family: workSans;
-  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: workSans;
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2e2e;
+  min-width: 400px;
+  font-family: workSans;
+  /* ################################# 
+      ASIDE NAVIGATION STYLES
+  ################################# */
+  /* ################################# 
+      TOP NAVIGATION STYLES
+  ################################# */
+}
+body .navigationAside {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  float: left;
+  list-style: none;
+}
+body .navigationAside .navigationAside__row-wrap {
+  display: flex;
+  align-items: center;
+}
+body .navigationAside .navigationAside__row-wrap svg {
+  color: rgb(115, 115, 115);
+  rotate: 33.7deg;
+}
+body .navigationAside .navigationAside__row-wrap a {
+  margin-left: 20px;
+  color: rgb(115, 115, 115);
+  text-decoration: none;
+}
+body .navigationAside .navigationAside_placeholer {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 48px;
+  width: 2px;
+  border-radius: 20px;
+  margin-left: 18px;
+  margin-block: 10px;
+}
+body .navigationTop {
+  position: fixed;
+  width: 100vw;
+}
+body .navigationTop .flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding-inline: 0px 140px;
+}
+body .navigationTop img {
+  height: 48px;
+}
+body .navigationTop .navigationTop_anchor-wrap {
+  display: flex;
+  align-items: center;
+}
+body .navigationTop .navigationTop_anchor-wrap .navigationTop_anchor-wrap_socialMedia {
+  margin-left: 90px;
+}
+body .navigationTop .navigationTop_anchor-wrap .navigationTop_anchor-wrap_socialMedia a {
+  margin-left: 15px;
+}
+body .navigationTop .navigationTop_anchor-wrap .navigationTop_anchor-wrap_language {
+  margin-left: 90px;
+}
+body main .article_heading {
+  padding-top: 13%;
+  padding-left: 30%;
+  margin-bottom: 10%;
+}
+body main .article_heading h1 {
+  z-index: -1;
+  position: fixed;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+  padding-inline: 103px;
 }
 
 /*# sourceMappingURL=styles.css.map */

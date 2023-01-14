@@ -1,0 +1,10 @@
+@import '_variables.scss';
+
+// MIXIN FOR THE TRANSPARENT NAV BAR ELEMENTS
+@mixin mixin_navbar_inactive_circles {
+    background-color: $color-white_transparent;
+}
+
+@mixin mixin_navbar_active_circles { 
+    background-color: $color-white;
+}
